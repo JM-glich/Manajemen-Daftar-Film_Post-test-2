@@ -1,3 +1,6 @@
+// Nama: Jemis Movid
+// NIM: 2409116070
+
 package com.mycompany.manajemen_daftar_film;
 
 import model.Movie;
