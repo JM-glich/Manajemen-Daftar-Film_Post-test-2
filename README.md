@@ -5,6 +5,7 @@
 
 Di bagian ini kita bikin blueprint dari objek Film. Setiap film punya atribut judul, genre, tahunRilis, dan rating.
 Semua atribut ini kita kasih modifier private, supaya gak bisa diutak-atik langsung dari luar class, melainkan lewat method khusus.
+Package ini juga fokusnya dibuat untuk data model-objek yang dipakai di program.
 
 Constructor
 ```java
@@ -25,8 +26,8 @@ public class Movie {
         this.rating = rating;
     }
 ```
-Constructor ini otomatis jalan waktu kita bikin objek baru. Misalnya saat user nambah film, data yang diinput langsung masuk ke sini. 
-Keyword this dipakai biar jelas kalau yang dituju itu atribut dalam class, bukan sekadar parameter.
+Constructor ini akan otomatis jalan sewaktu kita bikin objek baru. Misalnya saat user nambah film, data yang diinput langsung masuk ke sini. 
+Keyword this dipakai biar jelas kalau yang dituju itu atribut dalam class.
 
 scatter & getter
 ``` java
