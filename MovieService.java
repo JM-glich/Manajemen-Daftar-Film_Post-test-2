@@ -14,24 +14,24 @@ public class MovieService {
     private final List<Movie> movies = new ArrayList<>();
     private int nextId = 1;
 
-    // create
+    // Tambah 
     public Movie create(String title, String genre, int year, double rating) {
         Movie m = new Movie(nextId++, title.trim(), genre.trim(), year, rating);
         movies.add(m);
         return m;
     }
 
-    // read all
+    // Lihat
     public List<Movie> getAll() {
         return new ArrayList<>(movies);
     }
 
-    // find by id
+    // Mencari berdasarkan id
     public Optional<Movie> findById(int id) {
         return movies.stream().filter(m -> m.getId() == id).findFirst();
     }
 
-    // update (returns true if success)
+    // update
     public boolean update(int id, String title, String genre, Integer year, Double rating) {
         Optional<Movie> opt = findById(id);
         if (opt.isEmpty()) return false;
@@ -43,7 +43,7 @@ public class MovieService {
         return true;
     }
 
-    // delete
+    // hapus (delete)
     public boolean delete(int id) {
         return movies.removeIf(m -> m.getId() == id);
     }
@@ -74,3 +74,4 @@ public class MovieService {
         create("The Matrix", "Sci-Fi", 1999, 8.7);
     }
 }
+
