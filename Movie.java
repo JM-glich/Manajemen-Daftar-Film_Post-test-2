@@ -1,3 +1,6 @@
+// Nama: Jemis Movid
+// NIM: 2409116070
+
 package model;
 
 /**
@@ -57,4 +60,5 @@ public class Movie {
         return String.format("ID:%d | %s (%d) | %s | Rating: %.1f", id, title, year, genre, rating);
     }
 }
+
 
