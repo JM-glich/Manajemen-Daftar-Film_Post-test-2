@@ -1,3 +1,6 @@
+// Nama: Jemis Movid
+// NIM: 2409116070
+
 package service;
 
 import model.Movie;
@@ -74,4 +77,5 @@ public class MovieService {
         create("The Matrix", "Sci-Fi", 1999, 8.7);
     }
 }
+
 
