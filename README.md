@@ -195,33 +195,41 @@ Kode di atas adalah kode yang berfungsi untuk memvalidasi input user ketika ingi
 # Alur Program
 1. Program dimulai dari Main (package main). Pertama kali dijalankan, program menampilkan menu utama ke user.
 Menu berisi pilihan: tambah film, lihat daftar film, update, hapus, cari, dan keluar.
-    <img width="473" height="268" alt="image" src="https://github.com/user-attachments/assets/f03e6c70-f158-4168-9dc8-4ba2d3785fcd" />
+
+   <img width="473" height="268" alt="image" src="https://github.com/user-attachments/assets/f03e6c70-f158-4168-9dc8-4ba2d3785fcd" />
 
 2. Kemudian ketika user memasukan input pada menu, input user akan dibaca dengan Scanner. Program menggunakan percabangan (switch-case) untuk memutuskan aksi berdasarkan input tersebut.
 
 3. Jika memilih opsi 1 (Lihat)
+
     <img width="730" height="280" alt="image" src="https://github.com/user-attachments/assets/215dae87-df8a-4cce-91d1-1f6c6dce4c9b" />
 
     Program kemudian akan mencari datanya dari MovieService. Semua data film di dalam ArrayList ditampilkan ke layar dalam bentuk list.
 4. Jika memilih opsi 2 (Tambah)
-    <img width="716" height="323" alt="image" src="https://github.com/user-attachments/assets/90ff0f9f-f804-4104-8dfe-25a0eae2685c" />
+
+   <img width="716" height="323" alt="image" src="https://github.com/user-attachments/assets/90ff0f9f-f804-4104-8dfe-25a0eae2685c" />
 
     Program akan meminta data film: judul, genre, tahun rilis, rating. Data ini digunakan untuk membuat objek Film (dari package model). Objek film kemudian dikirim ke MovieService (package service) untuk ditambahkan ke dalam daftar ArrayList<Film>.
 5. Jika memilih opsi 3 (Update)
-    <img width="733" height="351" alt="image" src="https://github.com/user-attachments/assets/801bc694-65f8-4051-abe3-29dbc499c4f4" />
+
+     <img width="733" height="351" alt="image" src="https://github.com/user-attachments/assets/801bc694-65f8-4051-abe3-29dbc499c4f4" />
 
     Program akan meminta ID film yang ingin diupdate. Jika ditemukan, user diminta memasukkan data baru (judul/genre/tahun/rating). Dan setelah selesai, data akan dikirim ke MovieService.
 6. Jika memilih opsi 4 (Hapus)
+
     <img width="597" height="275" alt="image" src="https://github.com/user-attachments/assets/fa0c2cc6-f568-44f5-a27c-7ebe9ebfa81c" />
 
     Program akan meminta ID dari film yang ingin dihapus dari daftar. Dan kemudian setelah memasukan input, data film akan langsung dihapus.
+
     <img width="732" height="269" alt="image" src="https://github.com/user-attachments/assets/3a9dc108-42e7-4af9-84d3-1e8b1680f165" />
 
-8. Jika memilih opsi 5 (Cari)
+7. Jika memilih opsi 5 (Cari)
+
     <img width="714" height="233" alt="image" src="https://github.com/user-attachments/assets/c11f971f-5ba1-4347-a401-25bb5384d5d7" />
 
     Program meminta input judul film. Kemudian Method searchMovie() dipanggil untuk mencari apakah film ada dalam daftar. Jika ada → tampilkan detail film. Jika tidak → beri pesan bahwa film tidak ditemukan.
-9. Jika memilih opsi 0 (Keluar)
+8. Jika memilih opsi 0 (Keluar)
+
     <img width="551" height="293" alt="image" src="https://github.com/user-attachments/assets/da90426f-4c7e-4578-a5d6-7565707a40b4" />
 
     Saya rasa ini sudah jelas, yaitu program akan berhenti dan user otomatis keluar dari program.
